@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="brdrPaneRegisterEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.ManageEmployeeFormController">
+   <left>
+      <Pane fx:id="leftPane" prefHeight="300.0" prefWidth="300.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="userProfile" fill="WHITE" layoutX="150.0" layoutY="123.0" radius="63.0" stroke="#1a20dd" strokeType="INSIDE" />
+            <Label fx:id="lblUserName" layoutX="25.0" layoutY="201.0" prefHeight="41.0" prefWidth="251.0" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnHome" alignment="TOP_LEFT" layoutX="20.0" layoutY="306.0" onAction="#btnHomeOnAction" prefHeight="48.0" prefWidth="260.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="     Dashboard" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/home.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnProfileSettings" alignment="TOP_LEFT" layoutX="27.0" layoutY="545.0" onAction="#btnProfileSettingsOnAction" prefHeight="48.0" prefWidth="256.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="     Profile Settings" textAlignment="CENTER" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/settings.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnRegisterEmployee" alignment="TOP_LEFT" layoutX="20.0" layoutY="364.0" onAction="#btnRegisterEmployeeOnAction" prefHeight="48.0" prefWidth="260.0" ripplerFill="#939090" style="-fx-background-color: #000000;" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="     Manage Employee" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/empployee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnViewNotes" alignment="TOP_LEFT" layoutX="25.0" layoutY="420.0" onAction="#btnViewNotesOnAction" prefHeight="48.0" prefWidth="260.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="      View Notes" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/checkNotes.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnViewStatics" alignment="TOP_LEFT" layoutX="25.0" layoutY="485.0" onAction="#btnViewStaticsOnAction" prefHeight="48.0" prefWidth="260.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="     View Statistics" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/chart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="33.0" prefWidth="33.0" text=" " textAlignment="CENTER" />
+            <JFXButton fx:id="btnLogout" alignment="TOP_LEFT" layoutX="25.0" layoutY="903.0" onAction="#btnLogoutOnAction" prefHeight="48.0" prefWidth="256.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="     Logout" textAlignment="CENTER" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children></Pane>
+   </left>
+   <right>
+      <Pane prefHeight="5.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <Pane prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="101.0" prefWidth="300.0" styleClass="leftPane" stylesheets="@../asset/Styles.css">
+               <children>
+                  <JFXButton fx:id="btnHamburger" layoutX="8.0" layoutY="14.0" onAction="#btnClickHamburgerOnAction" prefHeight="41.0" prefWidth="47.0" text=" " textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/image/hamburger.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="paneSearchBar1" layoutX="1461.0" layoutY="18.0" prefHeight="65.0" prefWidth="445.0" styleClass="paneSearchBar" stylesheets="@../asset/Styles.css">
+               <children>
+                  <JFXButton fx:id="btnSearchOnAction" layoutX="387.0" layoutY="16.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/image/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <TextField fx:id="txtSearch" layoutX="14.0" layoutY="9.0" prefHeight="48.0" prefWidth="377.0" promptText="Search by Name" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="10.0" prefWidth="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="20.0" prefWidth="300.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Employee">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnAddEmployee" layoutX="1349.0" layoutY="882.0" onAction="#btnAddEmployeeOnAction" prefHeight="48.0" prefWidth="215.0" styleClass="btnAddEmployee" stylesheets="@../asset/Styles.css" text="    Add Employee" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <Pane fx:id="paneSearchBar11" layoutX="46.0" layoutY="73.0" prefHeight="65.0" prefWidth="445.0" styleClass="paneSearchBar" stylesheets="@../asset/Styles.css">
+               <children>
+                  <JFXButton layoutX="387.0" layoutY="16.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/image/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <ComboBox fx:id="cmbFilter" layoutX="14.0" layoutY="10.0" prefHeight="46.0" prefWidth="344.0" promptText="Filter By Category" styleClass="cmbFilter" stylesheets="@../asset/Styles.css" />
+               </children>
+            </Pane>
+            <TableView fx:id="tblEmployeeData" layoutX="46.0" layoutY="192.0" prefHeight="658.0" prefWidth="1510.0">
+              <columns>
+                <TableColumn fx:id="colName" prefWidth="179.0" text="Name" />
+                <TableColumn fx:id="colEmpID" prefWidth="192.0" text="Emp ID" />
+                  <TableColumn fx:id="colDesignation" minWidth="0.0" prefWidth="192.0" text="Designation" />
+                  <TableColumn fx:id="colEmail" prefWidth="312.0" text="Email" />
+                  <TableColumn fx:id="colContactNo" prefWidth="198.0" text="Contact No" />
+                  <TableColumn fx:id="colAddress" prefWidth="436.0" text="Address" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

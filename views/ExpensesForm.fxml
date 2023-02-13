@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="brdExpenses" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.ExpensesFormController">
+   <top>
+      <HBox prefHeight="41.0" prefWidth="1920.0" style="-fx-background-color: rgba(185, 194, 194, 0.27);" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="30.0" prefWidth="1920.0">
+               <children>
+                  <Pane layoutY="-3.0" prefHeight="48.0" prefWidth="193.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" />
+                  <Label layoutX="211.0" layoutY="3.0" text="Expenses">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="57.0" prefWidth="1920.0" style="-fx-background-color: #0d224d;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="57.0" prefWidth="1700.0" />
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <Pane prefHeight="982.0" prefWidth="193.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnDashboard" layoutX="2.0" layoutY="245.0" onAction="#btnDashboardOnAction" prefHeight="55.0" prefWidth="186.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text=" Dashboard" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="btnNewCustomer" layoutX="2.0" layoutY="341.0" onAction="#btnNewCustomerOnAction" prefHeight="55.0" prefWidth="185.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="Manage Customer" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/empployee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnExpenses" alignment="CENTER" layoutX="2.0" layoutY="435.0" onAction="#btnExpensesOnAction" prefHeight="55.0" prefWidth="181.0" style="-fx-background-color: #000000;" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="  Expenses" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton alignment="CENTER" layoutX="6.0" layoutY="531.0" onAction="#btnReturnOnAction" prefHeight="55.0" prefWidth="181.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="Returns" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="22.0" layoutX="21.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/return.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="22.0" layoutX="21.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/checkNotes.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="26.0" layoutX="19.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/home.gif" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogout" alignment="CENTER" layoutX="4.0" layoutY="909.0" onAction="#btnLogoutOnAction" prefHeight="55.0" prefWidth="181.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="  Logout" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="18.0" layoutY="923.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/logout.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </left>
+   <center>
+      <Pane prefHeight="906.0" prefWidth="1727.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="33.0" layoutY="29.0" text="Exp ID" />
+            <Label layoutX="271.0" layoutY="17.0" text="Description" />
+            <JFXTextField fx:id="txtDescription" layoutX="271.0" layoutY="56.0" prefHeight="31.0" prefWidth="202.0" />
+            <Label layoutX="534.0" layoutY="24.0" text="Cashier ID" />
+            <JFXTextField fx:id="txtCashierId" layoutX="534.0" layoutY="58.0" prefHeight="31.0" prefWidth="183.0" />
+            <Label layoutX="1021.0" layoutY="27.0" text="Amount" />
+            <JFXTextField fx:id="txtAmount" layoutX="1021.0" layoutY="57.0" prefHeight="31.0" prefWidth="183.0" />
+            <Label layoutX="778.0" layoutY="25.0" text="Date" />
+            <JFXDatePicker fx:id="dtDate" defaultColor="#3d4fb9" layoutX="778.0" layoutY="59.0" prefHeight="31.0" prefWidth="183.0" />
+            <Label layoutX="33.0" layoutY="244.0" text="Overview" textFill="#3909c9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TableView fx:id="tblExpData" layoutX="26.0" layoutY="293.0" onMouseClicked="#tblDataOnMouseClick" prefHeight="390.0" prefWidth="1646.0">
+              <columns>
+                <TableColumn fx:id="colExpId" prefWidth="261.0" text="Expenses ID" />
+                <TableColumn fx:id="colDescription" prefWidth="680.0" text="Description" />
+                  <TableColumn fx:id="colCashierId" prefWidth="195.0" text="Cashier ID" />
+                  <TableColumn fx:id="colDate" prefWidth="185.0" text="Date" />
+                  <TableColumn fx:id="colAmount" prefWidth="324.0" text="Amount" />
+              </columns>
+            </TableView>
+            <Label layoutX="1211.0" layoutY="716.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="lblTotal" layoutX="1297.0" layoutY="716.0" prefHeight="34.0" prefWidth="372.0" text="0.0" textFill="#eb1010">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <Label fx:id="lblBalance" layoutX="1308.0" layoutY="812.0" prefHeight="34.0" prefWidth="353.0" text=" " />
+            <JFXButton layoutX="1240.0" layoutY="44.0" onAction="#btnEnterOnAction" prefHeight="41.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-color: #e4dede;" stylesheets="@../asset/Styles.css" text="  Enter">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/enter.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="lblExpId" layoutX="33.0" layoutY="65.0" prefHeight="31.0" prefWidth="183.0" text=" " />
+            <JFXButton buttonType="RAISED" layoutX="1606.0" layoutY="44.0" onAction="#btnClearOnAction" prefHeight="41.0" prefWidth="111.0" ripplerFill="WHITE" style="-fx-background-color: #3bee68;" stylesheets="@../asset/Styles.css" text="  Add New">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="1362.0" layoutY="44.0" onAction="#btnEditOnAction" prefHeight="41.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-color: #e4dede;" stylesheets="@../asset/Styles.css" text="  Edit">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/pencil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Pane layoutX="1280.0" layoutY="-48.0" prefHeight="45.0" prefWidth="431.0" styleClass="paneSearchBar" stylesheets="@../asset/Styles.css">
+               <children>
+                  <TextField fx:id="txtSearch" layoutX="14.0" layoutY="6.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="338.0" promptText="Search by ExpId" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" />
+                  <JFXButton layoutX="363.0" layoutY="5.0" onAction="#btnSearchOnAction" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/image/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <JFXButton layoutX="1483.0" layoutY="44.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-color: #e4dede;" stylesheets="@../asset/Styles.css" text="  Delete">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/pencil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="CENTER" layoutX="33.0" layoutY="153.0" onAction="#btnGenerateExpenseReportOnAction" prefHeight="41.0" prefWidth="409.0" ripplerFill="WHITE" style="-fx-background-color: #c4c7cc;" stylesheets="@../asset/Styles.css" text="Generate Expense Report" textAlignment="CENTER" textFill="#f2f2f2">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton contentDisplay="CENTER" layoutX="461.0" layoutY="153.0" onAction="#btnViewSummaryOnAction" prefHeight="41.0" prefWidth="409.0" ripplerFill="WHITE" style="-fx-background-color: #ab80a6;" stylesheets="@../asset/Styles.css" text="View Expenses Summary" textAlignment="CENTER" textFill="#f2f2f2">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+</BorderPane>

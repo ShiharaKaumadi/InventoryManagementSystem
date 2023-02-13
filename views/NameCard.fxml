@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="paneNameCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="368.0" stylesheets="@../asset/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.NameCardController">
+   <children>
+      <Pane fx:id="paneCard" layoutX="14.0" layoutY="8.0" prefHeight="377.0" prefWidth="342.0" styleClass="paneEmployeeDetail" stylesheets="@../asset/Styles.css">
+         <children>
+            <Label fx:id="lblEmpName" layoutX="123.0" layoutY="44.0" prefHeight="30.0" prefWidth="205.0" text="label" textFill="WHITE" />
+            <Label fx:id="lblEmpID" layoutX="123.0" layoutY="81.0" prefHeight="30.0" prefWidth="205.0" text="label" textFill="WHITE" />
+            <Label fx:id="lblDesignation" layoutX="123.0" layoutY="122.0" prefHeight="30.0" prefWidth="205.0" text="label" textFill="WHITE" />
+            <Separator layoutX="5.0" layoutY="178.0" prefHeight="4.0" prefWidth="332.0" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/mail.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblEmailEmp" layoutX="53.0" layoutY="213.0" prefHeight="27.0" prefWidth="279.0" text="label" textFill="WHITE" />
+            <Label fx:id="lblMobilePhone" layoutX="52.0" layoutY="255.0" prefHeight="27.0" prefWidth="285.0" text="label" textFill="WHITE" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/call.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/location.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblEmpAddress" layoutX="50.0" layoutY="291.0" prefHeight="55.0" prefWidth="285.0" text="label" textFill="WHITE" wrapText="true" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="90.0" fitWidth="91.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/image/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

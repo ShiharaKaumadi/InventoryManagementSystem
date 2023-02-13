@@ -1,0 +1,245 @@
+.paneLogin{
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-background-color: #fcf8f8;
+    -fx-border-color:  #fcf8f8;
+}
+
+.brdrPaneLogin{
+    -fx-background-color:  #9bd8db;
+    -fx-border-color:   #9bd8db;
+}
+
+.innerLoginPane{
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-background-color: #beedef;
+    -fx-border-color:   #beedef;
+}
+
+.btnLogin{
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-background-color: #03349b;
+    -fx-border-color: #03349b;
+}
+
+.userProfile{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #03349b;
+}
+
+.leftPane{
+    -fx-background-color: #0d224d;
+
+
+}
+
+.btnHome{
+    -fx-background-color: #0d224d;
+    -fx-border-color: #0d224d;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.paneEmployee{
+    -fx-background-color: #a2a6b0;
+    -fx-border-color: #a2a6b0;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.paneSearchBar{
+    -fx-background-color: #a2a6b0;
+    -fx-border-color: #a2a6b0;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.txtSearchBar{
+    -fx-background-color: #e7e8ec;
+    -fx-border-color: #e7e8ec;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.paneEmployee{
+    -fx-background-color: #c4c7cc;
+    -fx-border-color: #c4c7cc;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.paneSales{
+    -fx-background-color: #c4c7cc;
+    -fx-border-color: #c4c7cc;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.paneTopSelling{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #aee3a5;
+    -fx-border-color:#aee3a5;
+}
+
+.cmbFilter{
+    -fx-background-color: #e7e8ec;
+    -fx-border-color: #e7e8ec;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.paneTrend{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #d6dede;
+    -fx-border-color:#d6dede;
+}
+
+.paneIncomeVariation{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #8bace1;
+    -fx-border-color: #8bace1;
+}
+
+.paneCustomer{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #e7c79f;
+    -fx-border-color: #e7c79f;
+}
+
+.paneTotalSales{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #a25f61;
+    -fx-border-color: #a25f61;
+}
+
+.paneE{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #e9907e;
+    -fx-border-color: #e9907e;
+}
+
+.btnAddEmployee{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #00917c;
+    -fx-border-color: #00917c;
+}
+
+.btnIncrease{
+    -fx-background-color: #00917c;
+    -fx-border-color:  #00917c;
+}
+
+.scrollPaneEmployee{
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #ffffff;
+    -fx-background-color: #ffffff;
+}
+
+.anchorPaneEmployee{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ffffff;
+
+}
+
+.paneEmployeeDetail{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #00917c;
+    -fx-background-color: #00917c;
+}
+
+.paneProfile{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-border-color: #ffffff;
+    -fx-background-color: #ffffff;
+}
+
+.tab-header-background{
+    -fx-background-color: #a2a6b0;
+}
+
+.jfx-tab-pane .tab-selected-line{
+    -fx-border-color: #ffffff;
+}
+
+.paneMrn{
+    -fx-border-color: rgba(185, 194, 194, 0.27);
+    -fx-background-color: rgba(185, 194, 194, 0.27);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.lblReset{
+    -fx-border-color: rgba(185, 194, 194, 0.27);
+    -fx-background-color: rgba(185, 194, 194, 0.27);
+    -fx-background-radius: 10px 10px 0px 0px;
+    -fx-border-radius: 10px 10px 0px 0px;
+}
+
+.paneReset{
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-border-color: rgba(185, 194, 194, 0.27);
+    -fx-border-width: 2px;
+}
+
+.btnCancel{
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-border-width: 2px;
+    -fx-border-color: #03349b;
+}
+
+.paneAddEmp{
+    -fx-border-color: rgba(185, 194, 194, 0.27);
+    -fx-background-color: rgba(185, 194, 194, 0.27);
+    -fx-background-radius: 10px 10px 0px 0px;
+    -fx-border-radius: 10px 10px 0px 0px;
+}
+
+.btnAddEmployee{
+    -fx-border-color:#a2a6b0;
+    -fx-background-color: #a2a6b0;
+    -fx-background-radius: 10px ;
+    -fx-border-radius: 10px;
+}
+
+.paneItemCard{
+    -fx-background-color: #d2d3d7;
+    -fx-border-color:#d2d3d7;
+    -fx-background-radius: 10px ;
+    -fx-border-radius: 10px;
+}
+
+.btnAdd{
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #00917c;
+    -fx-border-color: #00917c;
+}
+
+.btnPlaceOrder{
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #da2d31;
+    -fx-border-color: #da2d31;
+}
+
+.paneRecord{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ffffff;
+}

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="brdCashierDashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.CashierDashboardFormController">
+   <top>
+      <HBox prefHeight="41.0" prefWidth="1920.0" style="-fx-background-color: rgba(185, 194, 194, 0.27);" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="1920.0">
+               <children>
+                  <HBox layoutX="1051.0" layoutY="6.0" prefHeight="30.0" prefWidth="280.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="87.0" text="Order ID">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblOrderID" alignment="CENTER" prefHeight="30.0" prefWidth="201.0" text=" " textFill="#0bd09e">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="1354.0" layoutY="7.0" prefHeight="27.0" prefWidth="134.0" text="Customer Count">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCustomerCount" alignment="CENTER" layoutX="1500.0" layoutY="7.0" prefHeight="27.0" prefWidth="94.0" text=" " textFill="#0bd09e">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1732.0" layoutY="8.0" text="Time">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" alignment="CENTER" layoutX="1800.0" layoutY="7.0" prefHeight="27.0" prefWidth="88.0" text=" " textFill="#0bd09e">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="203.0" layoutY="7.0" text="Customer Id">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="cmbCustomerId" focusColor="#dbdddc" layoutX="314.0" layoutY="2.0" onAction="#cmbCustomerIdOnAction" prefHeight="38.0" prefWidth="165.0" promptText="Customer ID" styleClass="cmbFilter" stylesheets="@../asset/Styles.css" unFocusColor="#dbdddc" />
+                  <Label layoutX="591.0" layoutY="7.0" text="Customer Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCustomerName" alignment="CENTER" layoutX="740.0" layoutY="2.0" prefHeight="38.0" prefWidth="163.0" text=" " textFill="#0bd09e">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="-3.0" prefHeight="48.0" prefWidth="193.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" />
+               </children></Pane>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="57.0" prefWidth="1920.0" style="-fx-background-color: #0d224d;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="57.0" prefWidth="1700.0" />
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <Pane prefHeight="982.0" prefWidth="193.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnDashboard" layoutX="2.0" layoutY="245.0" onAction="#btnDashboardOnAction" prefHeight="55.0" prefWidth="186.0" style="-fx-background-color: #000000;" styleClass="btnHome" stylesheets="@../asset/Styles.css" text=" Dashboard" textFill="WHITE" />
+            <JFXButton fx:id="btnNewCustomer" layoutX="2.0" layoutY="341.0" onAction="#btnNewCustomerOnAction" prefHeight="55.0" prefWidth="185.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="Manage Customer" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/empployee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnExpenses" alignment="CENTER" layoutX="2.0" layoutY="435.0" onAction="#btnExpensesOnAction" prefHeight="55.0" prefWidth="181.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="  Expenses" textFill="WHITE" />
+            <ImageView fitHeight="30.0" fitWidth="22.0" layoutX="21.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/checkNotes.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="26.0" layoutX="19.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/home.gif" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogout" alignment="CENTER" layoutX="5.0" layoutY="913.0" onAction="#btnLogoutOnAction" prefHeight="55.0" prefWidth="181.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="Logout" textFill="WHITE" />
+            <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="16.0" layoutY="927.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/logout.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" layoutX="6.0" layoutY="521.0" onAction="#btnReturnOnAction" prefHeight="55.0" prefWidth="181.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="Returns" textFill="WHITE" />
+            <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="16.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/return.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </left>
+   <center>
+      <Pane prefHeight="932.0" prefWidth="1777.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fx:id="scrollPane" hbarPolicy="ALWAYS" layoutY="54.0" prefHeight="711.0" prefWidth="849.0" style="-fx-background-color: transparent;" vbarPolicy="ALWAYS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2604.0" prefWidth="844.0" style="-fx-background-color: white;">
+                     <children>
+                        <GridPane fx:id="gridPane" layoutY="-2.0" prefHeight="0.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Pane layoutX="883.0" prefHeight="702.0" prefWidth="804.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="-32.0" layoutY="-1.0" prefHeight="48.0" prefWidth="838.0" style="-fx-background-color: #0bd09e;">
+                     <children>
+                        <Pane prefHeight="48.0" prefWidth="22.0" />
+                        <Label fx:id="lblSubCategory" alignment="CENTER" prefHeight="38.0" prefWidth="163.0" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" text=" " />
+                        <Pane prefHeight="48.0" prefWidth="87.0" />
+                        <Label fx:id="lblBrandName" alignment="CENTER" prefHeight="38.0" prefWidth="163.0" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" text=" " />
+                        <Pane prefHeight="48.0" prefWidth="43.0" />
+                        <TextField fx:id="txtQty" alignment="CENTER" onAction="#txtEnterQtyOnAction" prefHeight="38.0" prefWidth="82.0" promptText="Quantity" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" />
+                        <Pane prefHeight="48.0" prefWidth="58.0" />
+                        <Label fx:id="lblMeasuredUnits" alignment="CENTER" prefHeight="38.0" prefWidth="95.0" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" text=" " />
+                        <Pane prefHeight="48.0" prefWidth="69.0" />
+                        <JFXButton fx:id="btnEnter" onAction="#btnEnterOnAction" prefHeight="39.0" prefWidth="113.0" text="Enter" textFill="#fcfcfc">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="scroll" layoutX="-33.0" layoutY="53.0" prefHeight="651.0" prefWidth="843.0" style="-fx-background-color: transparent;">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="639.0" prefWidth="847.0" style="-fx-background-color: white;">
+                           <children>
+                              <TableView fx:id="tblOrderCart" layoutX="-2.0" layoutY="-4.0" prefHeight="650.0" prefWidth="849.0" AnchorPane.topAnchor="-4.0">
+                                <columns>
+                                  <TableColumn fx:id="colItemCode" prefWidth="84.0" text="Item Code" />
+                                  <TableColumn fx:id="colItemDescription" prefWidth="251.0" text="Item Description" />
+                                    <TableColumn fx:id="colPrice" prefWidth="120.0" text="Unit Price" />
+                                    <TableColumn fx:id="colQty" prefWidth="93.0" text="Qty" />
+                                    <TableColumn fx:id="colTotal" prefWidth="148.0" text="Total" />
+                                    <TableColumn fx:id="colDelete" prefWidth="139.0" text="Delete" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <HBox layoutX="911.0" layoutY="714.0" prefHeight="53.0" prefWidth="772.0">
+               <children>
+                  <Pane prefHeight="53.0" prefWidth="764.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="8.0" prefHeight="29.0" prefWidth="61.0" text="Total" textFill="#000000d9">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotal" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="524.0" layoutY="10.0" prefHeight="33.0" prefWidth="226.0" text="0.00" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane layoutX="911.0" layoutY="767.0" prefHeight="53.0" prefWidth="773.0">
+               <children>
+                  <Label layoutX="11.0" layoutY="8.0" prefHeight="29.0" prefWidth="61.0" text="Cash" textFill="#000000d9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCash" alignment="CENTER_RIGHT" layoutX="553.0" layoutY="11.0" onAction="#txtCheckBalanceOnAction" prefHeight="31.0" prefWidth="206.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="913.0" layoutY="820.0" prefHeight="53.0" prefWidth="773.0">
+               <children>
+                  <JFXButton fx:id="btnPlaceOrder" layoutX="258.0" layoutY="6.0" onAction="#btnPlaceOrderOnAction" prefHeight="31.0" prefWidth="221.0" styleClass="btnPlaceOrder" stylesheets="@../asset/Styles.css" text="Place Order" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="7.0" layoutY="6.0" onAction="#btnPrintOnAction" prefHeight="31.0" prefWidth="221.0" style="-fx-background-color: #e06e2c;" styleClass="btnPlaceOrder" stylesheets="@../asset/Styles.css" text="Print Report" textFill="#f5f5f5">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="516.0" layoutY="8.0" onAction="#btnReceiptOnAction" prefHeight="38.0" prefWidth="235.0" style="-fx-background-color: #3574da;" text="Receipt" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="917.0" layoutY="873.0" prefHeight="39.0" prefWidth="764.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="5.0" prefHeight="29.0" prefWidth="61.0" text="Balance" textFill="#000000d9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBalance" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="524.0" layoutY="3.0" prefHeight="33.0" prefWidth="226.0" text="0.00" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="846.0" style="-fx-background-color: #0bd09e;">
+               <children>
+                  <Pane prefHeight="49.0" prefWidth="27.0" />
+                  <JFXComboBox fx:id="cmbItemCode" focusColor="#0bd09e" onAction="#cmbItemCodeOnAction" prefHeight="38.0" prefWidth="155.0" promptText="Item Code" styleClass="cmbFilter" stylesheets="@../asset/Styles.css" unFocusColor="#0bd09e" />
+                  <AnchorPane prefHeight="49.0" prefWidth="61.0">
+                     <children>
+                        <Label fx:id="lblDescription" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="6.0" prefHeight="38.0" prefWidth="330.0" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" text=" " />
+                     </children>
+                  </AnchorPane>
+                  <Pane prefHeight="49.0" prefWidth="42.0" />
+                  <Label fx:id="lblUnitPrice" alignment="CENTER" prefHeight="38.0" prefWidth="163.0" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" text=" " />
+                  <Pane prefHeight="49.0" prefWidth="47.0" />
+                  <Label fx:id="lblCategory" alignment="CENTER" prefHeight="38.0" prefWidth="135.0" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" text=" " />
+                  <Pane prefHeight="49.0" prefWidth="23.0" />
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+</BorderPane>

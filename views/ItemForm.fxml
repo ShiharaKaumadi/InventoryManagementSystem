@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneItemCard" prefHeight="270.0" prefWidth="261.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.ItemFormController">
+   <children>
+      <Pane fx:id="paneItem" prefHeight="258.0" prefWidth="247.0" styleClass="paneItemCard" stylesheets="@../asset/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblItemDescription" alignment="CENTER" layoutY="14.0" prefHeight="21.0" prefWidth="234.0" text="Colmans Toddy Vinegar 750ml" textAlignment="CENTER" />
+            <Label fx:id="lblItemPrice" layoutX="43.0" layoutY="231.0" prefHeight="21.0" prefWidth="91.0" text="340.00">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgItem" fitHeight="129.0" fitWidth="113.0" layoutX="66.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/colmansToddyVinegar.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnAdd" layoutX="153.0" layoutY="215.0" onAction="#btnAddOnAction" prefHeight="33.0" prefWidth="80.0" styleClass="btnAdd" text="Add">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblItemCode" alignment="CENTER" layoutX="14.0" layoutY="50.0" prefHeight="21.0" prefWidth="74.0" text="I-2001" />
+            <Label layoutX="14.0" layoutY="231.0" text="Rs.">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAvailability" layoutX="116.0" layoutY="50.0" prefHeight="21.0" prefWidth="133.0" text="Label" textFill="#d72020">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="brdPaneReturns" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.ReturnsFormController">
+   <left>
+      <Pane fx:id="leftPane" prefHeight="982.0" prefWidth="193.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="userProfile" fill="WHITE" layoutX="111.0" layoutY="117.0" radius="58.0" stroke="#1a20dd" strokeType="INSIDE" />
+            <Label fx:id="lblUserName" layoutX="25.0" layoutY="201.0" prefHeight="41.0" prefWidth="196.0" text=" " textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnHome" alignment="TOP_LEFT" layoutY="306.0" onAction="#btnHomeOnAction" prefHeight="55.0" prefWidth="188.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="  Dashboard" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/home.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnProfileSettings" alignment="TOP_LEFT" layoutX="4.0" layoutY="531.0" onAction="#btnProfileSettingsOnAction" prefHeight="55.0" prefWidth="186.0" style="-fx-background-color: #000000;" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="    Returns" textAlignment="CENTER" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/return.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnManageCustomer" alignment="TOP_LEFT" layoutX="4.0" layoutY="381.0" onAction="#btnManageCustomerOnAction" prefHeight="55.0" prefWidth="183.0" ripplerFill="#939090" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="  Manage Customer" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/empployee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnExpenses" alignment="TOP_LEFT" layoutX="5.0" layoutY="451.0" onAction="#btnExpensesOnAction" prefHeight="55.0" prefWidth="181.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text="   Expenses" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/image/checkNotes.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="33.0" prefWidth="33.0" text=" " textAlignment="CENTER" />
+            <JFXButton fx:id="btnLogout" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="903.0" onAction="#btnLogoutOnAction" prefHeight="55.0" prefWidth="179.0" styleClass="btnHome" stylesheets="@../asset/Styles.css" text=" Logout" textAlignment="CENTER" textFill="WHITE" />
+            <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="12.0" layoutY="917.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/logout.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </left>
+   <right>
+      <Pane prefHeight="5.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <Pane prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="101.0" prefWidth="193.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" />
+            <Pane fx:id="paneSearchBar1" layoutX="1461.0" layoutY="18.0" prefHeight="65.0" prefWidth="445.0" styleClass="paneSearchBar" stylesheets="@../asset/Styles.css">
+               <children>
+                  <JFXButton layoutX="387.0" layoutY="16.0" onAction="#btnSearchOnAction" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/image/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <TextField fx:id="txtSearch" layoutX="14.0" layoutY="9.0" onAction="#txtSearchOnAction" prefHeight="48.0" prefWidth="377.0" promptText="Search By Return Id" styleClass="txtSearchBar" stylesheets="@../asset/Styles.css" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="10.0" prefWidth="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="57.0" prefWidth="1920.0" styleClass="leftPane" stylesheets="@../asset/Styles.css" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnSave" layoutX="1118.0" layoutY="824.0" onAction="#btnSaveOnAction" prefHeight="43.0" prefWidth="173.0" styleClass="btnAddEmployee" stylesheets="@../asset/Styles.css" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXButton>
+            <Label layoutX="1522.0" layoutY="918.0" prefHeight="36.0" prefWidth="40.0" />
+            <Pane fx:id="paneProfile" layoutX="39.0" layoutY="464.0" prefHeight="329.0" prefWidth="1246.0" styleClass="paneReset" stylesheets="@../asset/Styles.css">
+               <children>
+                  <HBox layoutX="1.0" prefHeight="63.0" prefWidth="1245.0" stylesheets="@../asset/Styles.css">
+                     <children>
+                        <Pane prefHeight="63.0" prefWidth="1269.0" styleClass="paneAddEmp">
+                           <children>
+                              <Label layoutX="27.0" layoutY="17.0" prefHeight="35.0" prefWidth="298.0" text="Return Items">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></HBox>
+                  <Label layoutX="39.0" layoutY="207.0" prefHeight="33.0" prefWidth="246.0" text="Return Date">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <JFXTextField fx:id="txtReturnId" editable="false" layoutX="39.0" layoutY="136.0" prefHeight="31.0" prefWidth="301.0" />
+                  <Label layoutX="39.0" layoutY="93.0" prefHeight="33.0" prefWidth="246.0" text="Return ID">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Separator layoutX="377.0" layoutY="132.0" orientation="VERTICAL" prefHeight="183.0" prefWidth="6.0" />
+                  <Label layoutX="418.0" layoutY="93.0" prefHeight="33.0" prefWidth="246.0" text="Product ID">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label layoutX="777.0" layoutY="101.0" prefHeight="33.0" prefWidth="246.0" text="Customer ID">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <JFXTextField fx:id="txtProductId" layoutX="418.0" layoutY="136.0" prefHeight="31.0" prefWidth="301.0" />
+                  <JFXTextField fx:id="txtCustomerId" layoutX="777.0" layoutY="136.0" prefHeight="31.0" prefWidth="301.0" />
+                  <JFXDatePicker fx:id="dtReturnDate" defaultColor="#5750e1" layoutX="39.0" layoutY="246.0" prefHeight="31.0" prefWidth="312.0" />
+                  <Separator layoutX="746.0" layoutY="132.0" orientation="VERTICAL" prefHeight="183.0" prefWidth="6.0" />
+                  <Label layoutX="418.0" layoutY="207.0" prefHeight="33.0" prefWidth="246.0" text="Qty">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtQty" layoutX="418.0" layoutY="250.0" prefHeight="31.0" prefWidth="301.0" />
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnEdit" layoutX="901.0" layoutY="824.0" onAction="#btnEditOnAction" prefHeight="43.0" prefWidth="173.0" styleClass="btnAddEmployee" stylesheets="@../asset/Styles.css" text="Edit" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnDelete" layoutX="680.0" layoutY="824.0" onAction="#btnDeleteOnAction" prefHeight="43.0" prefWidth="173.0" styleClass="btnAddEmployee" stylesheets="@../asset/Styles.css" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXButton>
+            <TableView fx:id="tblReturns" layoutX="41.0" layoutY="91.0" prefHeight="343.0" prefWidth="1244.0">
+              <columns>
+                <TableColumn fx:id="colReturnId" prefWidth="279.9999694824219" text="Return ID" />
+                <TableColumn fx:id="colReturnDate" prefWidth="252.0" text="Return Date" />
+                  <TableColumn fx:id="colProductID" prefWidth="240.0" text="Product ID" />
+                  <TableColumn fx:id="colQty" prefWidth="208.0" text="Qty" />
+                  <TableColumn fx:id="colCustomerId" prefWidth="262.0" text="Customer ID" />
+              </columns>
+            </TableView>
+            <Label layoutX="41.0" layoutY="32.0" prefHeight="35.0" prefWidth="298.0" text="View All Return Items">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnDelete1" layoutX="458.0" layoutY="824.0" onAction="#btnAddNewOnAction" prefHeight="43.0" prefWidth="173.0" style="-fx-background-color: #2299da;" styleClass="btnAddEmployee" stylesheets="@../asset/Styles.css" text="Add New " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
